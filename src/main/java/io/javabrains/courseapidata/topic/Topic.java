@@ -2,7 +2,6 @@ package io.javabrains.courseapidata.topic;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jdk.jfr.Enabled;
 
 @Entity
 public class Topic {

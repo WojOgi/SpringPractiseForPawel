@@ -7,12 +7,12 @@ import java.util.List;
 
 @RestController
 public class TopicController {
+
     @Autowired
     private TopicService topicService;
 
     @RequestMapping("/topics")
     public List<Topic> getAllTopics() {
-
         return topicService.getAllTopics();
     }
 

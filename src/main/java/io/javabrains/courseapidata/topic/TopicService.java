@@ -9,8 +9,10 @@ import java.util.List;
 
 @Service
 public class TopicService {
+
     @Autowired
     private TopicRepository topicRepository;
+
     private final List<Topic> topics = new ArrayList<>(Arrays.asList(
             new Topic("spring", "Spring Framework", "Spring Framework Description"),
             new Topic("java", "Core Java", "Core Java Description"),
@@ -18,7 +20,6 @@ public class TopicService {
 //this instance (TopicService) gets initialized once at the start of the application and is available
 
     public List<Topic> getAllTopics() {
-
         //return topics;
         List<Topic> topics = new ArrayList<>();
         topicRepository.findAll().forEach(topics::add);
